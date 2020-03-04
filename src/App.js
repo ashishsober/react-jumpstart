@@ -2,6 +2,8 @@ import React , { Component } from 'react';
 import { Greet } from './greet-component/Greet';
 import { Counter } from './counter-component/Counter';
 import { Stylesheet } from './stylesheet-component/Stylesheet';
+import { Parent } from './components/Parent';
+import { FormComponent } from './components/FormComponent';
 
 //stateless class components
 export default class App extends Component {
@@ -13,6 +15,8 @@ export default class App extends Component {
                     i m inside the counter,above value is absolutly correct
                 </Counter>
                 <Stylesheet primary={true}></Stylesheet>
+                <Parent></Parent>
+                <FormComponent></FormComponent>
             </div>
         )
     }
