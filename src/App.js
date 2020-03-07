@@ -4,9 +4,11 @@ import { Counter } from './counter-component/Counter';
 import { Stylesheet } from './stylesheet-component/Stylesheet';
 import { Parent } from './components/Parent';
 import { FormComponent } from './components/FormComponent';
-
+import {ComponentA} from './components/ComponentA';
+import { UserProvider } from './context-provider/userContext';
 //stateless class components
 export default class App extends Component {
+
     render(){
         return (
             <div>
@@ -17,6 +19,12 @@ export default class App extends Component {
                 <Stylesheet primary={true}></Stylesheet>
                 <Parent></Parent>
                 <FormComponent></FormComponent>
+                
+                <UserProvider value="ashish">
+                   <ComponentA></ComponentA>
+                </UserProvider>   
+
+            
             </div>
         )
     }
