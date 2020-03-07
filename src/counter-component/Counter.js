@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './Counter.css';
-import MemoComp from '../components/MemoComp';
+import MemoComp from '../components/MemoComp.jsx';
 
 export class Counter extends Component {
    

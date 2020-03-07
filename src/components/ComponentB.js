@@ -5,17 +5,17 @@ export class ComponentB extends Component {
     
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <UserConsumer>
                     {
                         (userValue) => {
-                            return <h1>{userValue}-- coming from user context in ComponentB,this context we can achive in all the decendants component oF ComponentA</h1>
+                            return <h1>{userValue}-- coming from user context in ComponentB,this context we can achive in all the decendants component of ComponentA</h1>
 
                         }
                     }
                 </UserConsumer>
                 
-            </div>
+            </React.Fragment>
         )
     }
 }

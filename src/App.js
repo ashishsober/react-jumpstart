@@ -6,6 +6,7 @@ import { Parent } from './components/Parent';
 import { FormComponent } from './components/FormComponent';
 import {ComponentA} from './components/ComponentA';
 import { UserProvider } from './context-provider/userContext';
+import { PostList } from './components/PostList';
 //stateless class components
 export default class App extends Component {
 
@@ -18,12 +19,14 @@ export default class App extends Component {
                 </Counter>
                 <Stylesheet primary={true}></Stylesheet>
                 <Parent></Parent>
+                <br/>
                 <FormComponent></FormComponent>
-                
+                <br/>
                 <UserProvider value="ashish">
                    <ComponentA></ComponentA>
                 </UserProvider>   
-
+                <br/>
+                <PostList></PostList>
             
             </div>
         )
