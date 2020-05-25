@@ -1,0 +1,13 @@
+.customCard {
+   background-color: aquamarine; 
+   &:hover {
+      background-color:antiquewhite;
+   }
+   .crossIcon {
+      float: right;
+   }
+   .displayInline {
+      display: inline;
+    }
+}
+

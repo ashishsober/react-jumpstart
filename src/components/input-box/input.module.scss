@@ -1,0 +1,35 @@
+.componentText {
+    &.rtoFormComponent {
+        border-right: 1px solid #DCDCDC;
+        padding-left: 0;
+        position: relative;
+        border-bottom: 1px solid #DCDCDC;
+        overflow: hidden;
+        height: 70px;
+    }
+    &.focusedOut {
+        border-bottom: 1px solid #DCDCDC; 
+    }
+    .floatlabel {
+        opacity: 0;
+    }
+    .inputText {
+        width: 100%
+    }
+    .flexibleItemInput {
+        width:100%
+    }
+    input {
+        padding-top: 8px;
+        width: 100%;
+        vertical-align: top;
+        transition: .3s ease padding,.3s ease background-image;
+        font-size: 17px;
+        font-size: 1.0625rem;
+        font-weight: 300;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 17px!important;
+    }
+}

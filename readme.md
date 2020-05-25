@@ -15,4 +15,30 @@
 
       use https://jaredpalmer.com/formik/docs/overview
 
-* React Hooks
+* React lifecycle Hooks
+   
+        componentDidMount()--data fetching and event listeners
+        componentDidUpdate() --- data fetching 
+        componentwillUnmount()---unsubscribing event listeners
+
+* Hooks---use in functional component
+        
+        useState()   --to change the state in functional component
+        useEffect() --it runs after first(componentdidmount) render() and after every update(coponentwillupdate) and return the callback for unsubscribing anything like(componentWillUnmount).
+        https://www.freecodecamp.org/news/learn-the-basics-of-react-hooks-in-10-minutes-b2898287fe5d/
+
+* For SCSS
+
+         npm install node-sass
+         using SCSS modules
+         Instead of class use className
+
+* React-Redux 7.2
+
+
+
+* React Native
+
+        https://reactnative.dev/
+
+

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const EmailInputComp = (props) => {
+export const InputComp = (props) => {
         return (
             <React.Fragment>
                   <label>{props.title}
@@ -11,4 +11,4 @@ export const EmailInputComp = (props) => {
         )
 }
 
-export default EmailInputComp
+export default InputComp

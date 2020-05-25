@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Children from './Children';
-import EmailInputComp from './EmailInputComp';
+import InputComp from './input-box/InputComp';
 export class Parent extends Component {
 
     constructor(props){
@@ -23,7 +23,7 @@ export class Parent extends Component {
           <div style={{border:'1px solid #1274b2'}}>
               <h1>Parent</h1>
               <label>children value</label> : {this.state.childValue}<br/>
-              <EmailInputComp label="parentName" ></EmailInputComp>
+              <InputComp label="parentName" ></InputComp>
               <Children parentHandler={this.parentHandler}></Children>
           </div>
       )
