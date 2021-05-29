@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import InputComp from './input-box/InputComp';
 import ButtonComp from './button-component/ButtonComp';
 // import axios from 'axios';
-import usersData from '../components/data/users.json';
+import usersData from '../data/users.json';
 export class FormComponent extends Component {
     constructor(props) {
         super(props)

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import usersData from '../data/users.json';
+import usersData from '../../data/users.json';
 
 export default function UserDetail({match}) {
     const [user,setUser] = useState({});

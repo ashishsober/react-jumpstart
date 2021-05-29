@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import axios from 'axios';
-import users from '../data/users.json';
+import users from '../../data/users.json';
 import UserBlock from './UserBlock.js';
 
 export class PostList extends Component {

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import "./App.scss";
-import { Greet } from './greet-component/Greet';
-import { Counter } from './counter-component/Counter';
-import { Stylesheet } from './stylesheet-component/Stylesheet';
+import { Greet } from './components/greet-component/Greet';
+import { Counter } from './components/counter-component/Counter';
+import { Stylesheet } from './components/stylesheet-component/Stylesheet';
 import { Parent } from './components/Parent';
 import { FormComponent } from './components/FormComponent';
 import { ComponentA } from './components/ComponentA';
 import { UserProvider } from './context-provider/userContext';
 import { PostList } from './components/user-list/PostList';
-import HookCounter from './hook-component/HookCounter';
+import HookCounter from './components/hook-component/HookCounter';
 import Nav from './Nav';
 import UserDetail from './components/user-list/UserDetail';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
