@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eco-ui-app
+  labels:
+    app: eco-ui-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eco-ui-app
+  template:
+    metadata:
+      labels:
+        app: eco-ui-app
+    spec:
+      containers:
+      - name: eco-ui-app
+        image: laxmi.azurecr.io/eco-ui:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
+          protocol: TCP  
+      dnsPolicy: ClusterFirst
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eco-ui-service
+  labels:
+    app: eco-ui-service
+spec:
+  selector:
+    app: eco-ui-app
+  type: LoadBalancer  
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+    nodePort: 30002
+
